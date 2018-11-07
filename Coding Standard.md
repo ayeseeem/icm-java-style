@@ -27,6 +27,7 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 ##### Code Organising #####
 
 - **Remove trailing whitespace**
+- **Organize imports**
 
 XML
 ---
