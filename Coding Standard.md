@@ -14,7 +14,7 @@ Load [`Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml`](Jav
 which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in bold):
 
-##### Indentation
+##### Indentation #####
 
 - Tab policy: **Spaces only**
 
@@ -24,7 +24,9 @@ Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java
 which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in bold):
 
-- None
+##### Code Organising #####
+
+- **Remove trailing whitespace**
 
 XML
 ---

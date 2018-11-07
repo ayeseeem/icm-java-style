@@ -37,7 +37,7 @@
 <setting id="cleanup.remove_redundant_modifiers" value="false"/>
 <setting id="cleanup.remove_redundant_semicolons" value="false"/>
 <setting id="cleanup.remove_redundant_type_arguments" value="false"/>
-<setting id="cleanup.remove_trailing_whitespaces" value="false"/>
+<setting id="cleanup.remove_trailing_whitespaces" value="true"/>
 <setting id="cleanup.remove_trailing_whitespaces_all" value="true"/>
 <setting id="cleanup.remove_trailing_whitespaces_ignore_empty" value="false"/>
 <setting id="cleanup.remove_unnecessary_casts" value="true"/>
