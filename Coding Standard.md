@@ -8,6 +8,27 @@ Java
 
 ### Spring STS/Eclipse ###
 
+#### Java; Compiler; Errors/Warnings ####
+
+Apply the following changes
+
+- Code style
+  - Undocumented empty block: Ignore -> Warning
+  - Resource not managed via try-with-resource (1.7+): Ignore -> Error
+- Potential programming problems
+  - Possible accidental boolean assignment (e.g. if (a = b)): Ignore -> Error
+  - Empty statement: Ignore -> Error
+  - Class overrides 'equals()' but not 'hashCode()': Ignore -> Error
+- Unnecessary code
+  - Value of method parameter is not used: Ignore -> Warning
+    (but Ignore in overriding and implementing methods)
+  - Unnecessary 'else' statement: Ignore -> Warning
+  - Unnecessary cast or 'instanceof' operation: Ignore -> Warning
+  - Unnecessary declaration of thrown exceptions: Ignore -> Error
+    (but Ignore in overriding and implementing, or documented with '@throws'
+    or '@exception'; Don't ignore Exception or Throwable)
+
+
 #### Java; Code Style; Formatter ####
 
 Load [`Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml),
