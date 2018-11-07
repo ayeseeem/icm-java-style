@@ -29,6 +29,29 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - **Remove trailing whitespace**
 - **Organize imports**
 
+##### Code Style #####
+
+- **Use blocks in if/while/for/do statements**
+  - **Always**
+- **Convert 'for' loops to enhanced**
+- **Convert functional interface instances**
+  - Use lambda where possible
+
+##### Unnecessary Code #####
+
+- Remove unused imports
+- Remove unnecessary casts
+- **Remove redundant type arguments**
+- **Remove redundant modifiers**
+- **Remove redundant semicolons**
+
+#### Java; Editor; Save Actions ####
+
+- **Perform the selected actions on Save**
+- **Organize imports**
+- Additional Actions:
+  - Configure this to match the Clean Up (above) as far as possible
+
 XML
 ---
 
