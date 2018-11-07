@@ -25,3 +25,12 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in bold):
 
 - None
+
+XML
+---
+
+- Use 2 or 4 spaces for indenting, not tabs.
+  - Maven POM files are supposed to be indented with 2 spaces
+    <https://maven.apache.org/developers/conventions/code.html#XML_Code_Style>,
+    although that convention does not seem to be very common, and the
+    Spring tools seem to use tab indentation.
