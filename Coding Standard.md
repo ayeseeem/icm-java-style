@@ -27,6 +27,8 @@ Apply the following changes
   - Unnecessary declaration of thrown exceptions: Ignore -> Error
     (but Ignore in overriding and implementing, or documented with '@throws'
     or '@exception'; Don't ignore Exception or Throwable)
+- Generic Types
+  - Redundant type arguments (1.7 or higher): Ignore -> Warning
 
 
 #### Java; Code Style; Formatter ####
