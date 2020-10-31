@@ -8,6 +8,12 @@ Java
 
 ### Spring STS/Eclipse ###
 
+Recommended plug-ins:
+
+- [MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/)
+- [Infinitest](https://infinitest.github.io/#eclipse)
+
+
 #### Java; Compiler; Errors/Warnings ####
 
 Apply the following changes
