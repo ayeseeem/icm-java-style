@@ -26,6 +26,7 @@ Java
 
 - Use 4 spaces for indenting, not tabs
 
+
 ### Spring STS/Eclipse ###
 
 Recommended plug-ins:
@@ -63,9 +64,11 @@ Load [`Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml`](Jav
 which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in bold):
 
+
 ##### Indentation #####
 
 - Tab policy: **Spaces only**
+
 
 #### Java; Code Style; Clean Up ####
 
@@ -73,10 +76,12 @@ Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java
 which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in bold):
 
+
 ##### Code Organising #####
 
 - **Remove trailing whitespace**
 - **Organize imports**
+
 
 ##### Code Style #####
 
@@ -86,6 +91,7 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - **Convert functional interface instances**
   - Use lambda where possible
 
+
 ##### Unnecessary Code #####
 
 - Remove unused imports
@@ -94,12 +100,14 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - **Remove redundant modifiers**
 - **Remove redundant semicolons**
 
+
 #### Java; Editor; Save Actions ####
 
 - **Perform the selected actions on Save**
 - **Organize imports**
 - Additional Actions:
   - Configure this to match the Clean Up (above) as far as possible
+
 
 XML
 ---
