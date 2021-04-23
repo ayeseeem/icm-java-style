@@ -14,6 +14,12 @@ Add initials and time, like this:
 // TODO: ABC 2020-10-31: Thing to do
 ```
 
+Strip trailing whitespace.
+
+- Regex for Eclipse/Spring STS to find trailing whitespace
+ (but prefer configuring the IDE to fix on save, at least for some file types):
+  `[ \t]+$`
+
 
 Java
 ----
