@@ -40,22 +40,22 @@ Recommended plug-ins:
 Apply the following changes
 
 - Code style
-  - Undocumented empty block: Ignore -> Warning
-  - Resource not managed via try-with-resource (1.7+): Ignore -> Error
+  - Undocumented empty block: Ignore -> **Warning**
+  - Resource not managed via try-with-resource (1.7+): Ignore -> **Error**
 - Potential programming problems
-  - Possible accidental boolean assignment (e.g. if (a = b)): Ignore -> Error
-  - Empty statement: Ignore -> Error
-  - Class overrides 'equals()' but not 'hashCode()': Ignore -> Error
+  - Possible accidental boolean assignment (e.g. if (a = b)): Ignore -> **Error**
+  - Empty statement: Ignore -> **Error**
+  - Class overrides 'equals()' but not 'hashCode()': Ignore -> **Error**
 - Unnecessary code
-  - Value of method parameter is not used: Ignore -> Warning
-    (but Ignore in overriding and implementing methods)
-  - Unnecessary 'else' statement: Ignore -> Warning
-  - Unnecessary cast or 'instanceof' operation: Ignore -> Warning
-  - Unnecessary declaration of thrown exception: Ignore -> Error
-    (but Ignore in overriding and implementing, or documented with '@throws'
-    or '@exception'; Don't ignore Exception or Throwable)
+  - Value of method parameter is not used: Ignore -> **Warning**
+    - (but Ignore in overriding and implementing methods)
+  - Unnecessary 'else' statement: Ignore -> **Warning**
+  - Unnecessary cast or 'instanceof' operation: Ignore -> **Warning**
+  - Unnecessary declaration of thrown exception: Ignore -> **Error**
+    - (but Ignore in overriding and implementing, or documented with '@throws'
+      or '@exception'; Don't ignore Exception or Throwable)
 - Generic Types
-  - Redundant type arguments (1.7 or higher): Ignore -> Warning
+  - Redundant type arguments (1.7 or higher): Ignore -> **Warning**
 
 
 #### Java; Code Style; Formatter ####
