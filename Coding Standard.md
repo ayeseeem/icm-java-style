@@ -51,7 +51,7 @@ Apply the following changes
     (but Ignore in overriding and implementing methods)
   - Unnecessary 'else' statement: Ignore -> Warning
   - Unnecessary cast or 'instanceof' operation: Ignore -> Warning
-  - Unnecessary declaration of thrown exceptions: Ignore -> Error
+  - Unnecessary declaration of thrown exception: Ignore -> Error
     (but Ignore in overriding and implementing, or documented with '@throws'
     or '@exception'; Don't ignore Exception or Throwable)
 - Generic Types
