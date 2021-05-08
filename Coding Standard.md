@@ -43,7 +43,7 @@ Apply the following changes
   - Undocumented empty block: Ignore -> **Warning**
   - Resource not managed via try-with-resource (1.7+): Ignore -> **Error**
 - Potential programming problems
-  - Possible accidental boolean assignment (e.g. if (a = b)): Ignore -> **Error**
+  - Possible accidental boolean assignment (e.g. 'if (a = b)'): Ignore -> **Error**
   - Empty statement: Ignore -> **Error**
   - Class overrides 'equals()' but not 'hashCode()': Ignore -> **Error**
 - Unnecessary code
