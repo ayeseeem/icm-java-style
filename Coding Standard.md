@@ -41,7 +41,7 @@ Apply the following changes
 
 - Code style
   - Undocumented empty block: Ignore -> **Warning**
-  - Resource not managed via try-with-resource (1.7+): Ignore -> **Error**
+  - Resource not managed via try-with-resource (1.7 or higher): Ignore -> **Error**
 - Potential programming problems
   - Possible accidental boolean assignment (e.g. 'if (a = b)'): Ignore -> **Error**
   - Empty statement: Ignore -> **Error**
@@ -54,7 +54,7 @@ Apply the following changes
   - Unnecessary declaration of thrown exception: Ignore -> **Error**
     - (but Ignore in overriding and implementing, or documented with '@throws'
       or '@exception'; **Don't** ignore Exception or Throwable)
-- Generic Types
+- Generic types
   - Redundant type arguments (1.7 or higher): Ignore -> **Warning**
 
 
