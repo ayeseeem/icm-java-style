@@ -53,7 +53,7 @@ Apply the following changes
   - Unnecessary cast or 'instanceof' operation: Ignore -> **Warning**
   - Unnecessary declaration of thrown exception: Ignore -> **Error**
     - (but Ignore in overriding and implementing, or documented with '@throws'
-      or '@exception'; Don't ignore Exception or Throwable)
+      or '@exception'; **Don't** ignore Exception or Throwable)
 - Generic Types
   - Redundant type arguments (1.7 or higher): Ignore -> **Warning**
 
