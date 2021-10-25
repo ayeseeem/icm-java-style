@@ -109,6 +109,17 @@ which is the "Eclipse [built-in]" profile, with the following modifications
   - Configure this to match the Clean Up (above) as far as possible
 
 
+### JUnit ###
+
+TODO: add more about Hamcrest:
+
+- Prefer `assertThat` to `assertEquals`
+- Use Hamcrest's `assertThat`, not JUnit's
+- Regex for Eclipse/Spring STS to convert (simple, single-comma) assertions:
+  - Find: `assertEquals\((.*), (.*)\)`
+  - Replace: `assertThat\($2, is\($1\)\)`
+
+
 XML
 ---
 
