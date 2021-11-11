@@ -115,6 +115,7 @@ TODO: add more about Hamcrest:
 
 - Prefer `assertThat` to `assertEquals`
 - Use Hamcrest's `assertThat`, not JUnit's
+  - it can give slightly better diagnostic messages, and is more future-proof
 - Regex for Eclipse/Spring STS to convert (simple, single-comma) assertions:
   - Find: `assertEquals\((.*), (.*)\)`
   - Replace: `assertThat\($2, is\($1\)\)`
