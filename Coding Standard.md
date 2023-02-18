@@ -133,6 +133,12 @@ Some of the changes are tested by
 
 Standard set-up, with the following modifications:
 
+- Allow "utility" classes to have a default constructor.
+  We don't see the point in adding code just to stop a class being instantiated:
+  there doesn't seem to be any problem if it is.
+
+  - Disable "Utility classes should not have public constructors" (squid:S1118).
+
 - Allow double underscores in constants, so we can add "emergent types".
   If we start naming things like USE_EXCEL__OPTION, USE_TEXT__OPTION,
   the double underscore can highlight that a type (Option) is starting to emerge.
