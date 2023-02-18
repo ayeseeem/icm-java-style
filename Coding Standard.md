@@ -121,6 +121,37 @@ TODO: add more about Hamcrest:
   - Replace: `assertThat\($2, is\($1\)\)`
 
 
+### SonarQube ###
+
+TODO: ICM 2023-02-18: Write Java style paragraphs explaining these, with these regexes, rather than have, or to reference, this separate SonarQube section
+
+Some of the changes are tested by
+[`SonarQubeRegexTest.java`](src/test/java/org/ayeseeem/qa/SonarQubeRegexTest.java).
+
+- TODO: ICM 2023-02-18: Find my updated/simplified version of these tests
+- TODO: ICM 2023-02-18: Extract constants for the Regexes
+
+Standard set-up, with the following modifications:
+
+- Allow double underscores in constants, so we can add "emergent types".
+  If we start naming things like USE_EXCEL__OPTION, USE_TEXT__OPTION,
+  the double underscore can highlight that a type (Option) is starting to emerge.
+
+  - Modify "Constant names should comply with a naming convention" (squid:S00115)
+    Change regex from:
+    `^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$`
+    to:
+    `^[A-Z][A-Z0-9]*(_{1,2}[A-Z0-9]+)*$`
+
+- Allow generic type names like `EntityT`, not just `T`, `E` and so on.
+
+  - Modify "Type parameter names should comply with a naming convention" (squid:S00119)
+    Change regex from:
+    `^[A-Z][0-9]?$`
+    to:
+    `(^[A-Z][0-9]?$)|(^(([A-Z][a-z0-9]+)+T)$)`
+
+
 XML
 ---
 

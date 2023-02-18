@@ -1,1 +1,9 @@
+## Eclipse/Maven
+.classpath
+.project
+.settings
+target/
+
+
+## Backups
 *.bak
