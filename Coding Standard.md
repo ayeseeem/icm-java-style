@@ -111,14 +111,16 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 
 ### JUnit ###
 
-TODO: add more about Hamcrest:
-
-- Prefer `assertThat` to `assertEquals`
-- Use Hamcrest's `assertThat`, not JUnit's
-  - it can give slightly better diagnostic messages, and is more future-proof
+- Prefer `assertThat()` to `assertEquals()`
+  - It's nicer to read, and tends to make it clear which is the expected
+    value, and which is the actual.
+    People naturally seem to write, `assertThat(actual, is(expected));`
 - Regex for Eclipse/Spring STS to convert (simple, single-comma) assertions:
   - Find: `assertEquals\((.*), (.*)\)`
   - Replace: `assertThat\($2, is\($1\)\)`
+- If using Hamcrest, prefer Hamcrest's `assertThat()` to JUnit's `assertThat()`,
+  which is being deprecated.
+  - It can give slightly better diagnostic messages, and is more future-proof.
 
 
 ### SonarQube ###
