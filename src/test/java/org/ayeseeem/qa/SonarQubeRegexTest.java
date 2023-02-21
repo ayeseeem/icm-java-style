@@ -1,5 +1,7 @@
 package org.ayeseeem.qa;
 
+import static org.ayeseeem.qa.SonarQubeRegexTest.RegexMatcher.matches;
+import static org.ayeseeem.qa.SonarQubeRegexTest.RegexMatcher.misses;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
@@ -57,14 +59,6 @@ public class SonarQubeRegexTest {
         assertThat(ours, matches(exceptions));
     }
 
-    private static RegexMatcher matches(String... cases) {
-        return new RegexMatcher(true, cases);
-    }
-
-    private static RegexMatcher misses(String... cases) {
-        return new RegexMatcher(false, cases);
-    }
-
     static class RegexMatcher extends TypeSafeDiagnosingMatcher<Pattern> {
 
         private final boolean shouldMatch;
@@ -72,6 +66,14 @@ public class SonarQubeRegexTest {
         private final String failureCondition;
 
         private final List<String> cases;
+
+        static RegexMatcher matches(String... cases) {
+            return new RegexMatcher(true, cases);
+        }
+
+        static RegexMatcher misses(String... cases) {
+            return new RegexMatcher(false, cases);
+        }
 
         public RegexMatcher(boolean shouldMatch, String... cases) {
             this.shouldMatch = shouldMatch;
