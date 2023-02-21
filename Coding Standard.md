@@ -130,7 +130,6 @@ TODO: ICM 2023-02-18: Write Java style paragraphs explaining these, with these r
 Some of the changes are tested by
 [`SonarQubeRegexTest.java`](src/test/java/org/ayeseeem/qa/SonarQubeRegexTest.java).
 
-- TODO: ICM 2023-02-18: Find my updated/simplified version of these tests
 - TODO: ICM 2023-02-18: Extract constants for the Regexes
 
 Standard set-up, with the following modifications:
