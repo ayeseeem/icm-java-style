@@ -9,14 +9,14 @@ import java.util.regex.Pattern;
 import org.junit.Test;
 
 /**
- * Checks some of the SonarQube rules.
+ * Checks some of the SonarQube rules' regular expressions.
  */
 public class SonarQubeRegexTest {
 
     @Test
     public void testConstantNaming_AllowDoubleUnderscores() {
-        Pattern theirs = Pattern.compile("^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$");
-        Pattern ours = Pattern.compile("^[A-Z][A-Z0-9]*(_{1,2}[A-Z0-9]+)*$");
+        Pattern theirs = Pattern.compile(SonarQubeRegex.S00115__CONSTANT_NAMES__DEFAULT__STR);
+        Pattern ours = Pattern.compile(SonarQubeRegex.S00115__CONSTANT_NAMES__ICM__STR);
 
         String[] allowed = new String[] { "A", "A1", "ABC", "A1C", "ABC_DEF", "ABC_DEF_GHI" };
         String[] rejected = new String[] { "", "1", "123", "1ABC", "123_456", "TRIPLE___UNDERSCORE", "lower_case" };
@@ -33,11 +33,9 @@ public class SonarQubeRegexTest {
     }
 
     @Test
-    public void testTypeNaming_ChangesFromSonarQubeDefault() {
-        String sqDefault = "^[A-Z][0-9]?$";
-        Pattern theirs = Pattern.compile(sqDefault);
-        // Normal SonarQube rules, or one or more capitalized words, followed by T:
-        Pattern ours = Pattern.compile("(" + sqDefault + ")|(^(([A-Z][a-z0-9]+)+T)$)");
+    public void testTypeParameterNaming_ChangesFromSonarQubeDefault() {
+        Pattern theirs = Pattern.compile(SonarQubeRegex.S00119__TYPE_PARAM_NAMES__DEFAULT__STR);
+        Pattern ours = Pattern.compile(SonarQubeRegex.S00119__TYPE_PARAM_NAMES__ICM__STR);
 
         String[] allowed = new String[] { "A", "B", "T", "A1", "A2" };
         String[] rejected = new String[] { "", "1", "123", "1A", "A_1", "ABC", "ABC_DEF", "AB", "TT",
