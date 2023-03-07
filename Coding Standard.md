@@ -26,6 +26,20 @@ Java
 ----
 
 - Use 4 spaces for indenting, not tabs
+- Simplify lambdas:
+  - Remove `{ }` from around single liners.
+  - Prefer method references where possible.
+- Don't use `public` on interface methods.
+  [JLS Method Declarations](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.4)
+  says this (our emphasis):
+
+  > Every method declaration in the body of an interface is implicitly
+  > public (§6.6). It is permitted, but **discouraged as a matter of style**,
+  > to redundantly specify the public modifier for a method declaration in
+  > an interface.
+
+  - Eclipse regex to find contraventions (produces false positives):
+    `(?s)interface.*public`
 
 
 ### Spring STS/Eclipse ###
