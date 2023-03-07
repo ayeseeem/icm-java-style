@@ -16,9 +16,10 @@ Add initials and time, like this:
 
 Strip trailing whitespace.
 
-- Regex for Eclipse/Spring STS to find trailing whitespace
- (but prefer configuring the IDE to fix on save, at least for some file types):
+- Regex for Eclipse/Spring STS to find trailing whitespace:
   `[ \t]+$`
+  - but prefer configuring the IDE to fix on save, and/or use
+    Spotless Maven plugin, at least for some file types.
 
 
 Java
