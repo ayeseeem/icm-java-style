@@ -3,9 +3,9 @@ Coding Standard
 
 Allowed tags in source code (configure your IDE to detect them):
 
-- "TODO": low-level tasks
+- `TODO`: low-level tasks
   - for significant issues, put TODOs in READMEs or use an issue tracker
-- "HACK": "temporary" hacks to get code running
+- `HACK`: "temporary" hacks to get code running
   - avoid leaving these in the code for long
 
 Add initials and time, like this:
