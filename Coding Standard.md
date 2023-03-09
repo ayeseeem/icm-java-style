@@ -66,6 +66,7 @@ Apply the following changes
     - (but Ignore in overriding and implementing methods)
   - Unnecessary 'else' statement: Ignore -> **Warning**
   - Unnecessary cast or 'instanceof' operation: Ignore -> **Warning**
+    - Partially moot given that "Remove unnecessary casts" is set in "Clean up".
   - Unnecessary declaration of thrown exception: Ignore -> **Error**
     - (but Ignore in overriding and implementing, or documented with '@throws'
       or '@exception'; **Don't** ignore Exception or Throwable)
