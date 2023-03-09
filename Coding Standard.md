@@ -74,6 +74,7 @@ Apply the following changes
 - Annotations
   - Missing '@Override' annotation: Ignore -> **Warning**
     - Moot given that "Add missing '@Override' annotations" is set in "Clean up".
+  - Missing '@Deprecated' annotation: Ignore -> **Warning**
 
 
 #### Java; Code Style; Formatter ####
