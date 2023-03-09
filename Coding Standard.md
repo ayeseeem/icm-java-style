@@ -71,6 +71,9 @@ Apply the following changes
       or '@exception'; **Don't** ignore Exception or Throwable)
 - Generic types
   - Redundant type arguments (1.7 or higher): Ignore -> **Warning**
+- Annotations
+  - Missing '@Override' annotation: Ignore -> **Warning**
+    - Moot given that "Add missing '@Override' annotations" is set in "Clean up".
 
 
 #### Java; Code Style; Formatter ####
