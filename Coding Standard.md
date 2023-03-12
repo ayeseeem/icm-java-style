@@ -54,16 +54,21 @@ Recommended plug-ins:
 
 #### Java; Compiler; Errors/Warnings ####
 
-Apply the following changes
+Apply the following changes:
 
-- Code style
+- Code style:
+
   - Undocumented empty block: Ignore -> **Warning**
   - Resource not managed via try-with-resource (1.7 or higher): Ignore -> **Error**
-- Potential programming problems
+
+- Potential programming problems:
+
   - Possible accidental boolean assignment (e.g. 'if (a = b)'): Ignore -> **Error**
   - Empty statement: Ignore -> **Error**
   - Class overrides 'equals()' but not 'hashCode()': Ignore -> **Error**
-- Unnecessary code
+
+- Unnecessary code:
+
   - Value of method parameter is not used: Ignore -> **Warning**
     - (but Ignore in overriding and implementing methods)
   - Unnecessary 'else' statement: Ignore -> **Warning**
@@ -72,9 +77,13 @@ Apply the following changes
   - Unnecessary declaration of thrown exception: Ignore -> **Error**
     - (but Ignore in overriding and implementing, or documented with '@throws'
       or '@exception'; **Don't** ignore Exception or Throwable)
-- Generic types
+
+- Generic types:
+
   - Redundant type arguments (1.7 or higher): Ignore -> **Warning**
-- Annotations
+
+- Annotations:
+
   - Missing '@Override' annotation: Ignore -> **Warning**
     - Moot given that "Add missing '@Override' annotations" is set in "Clean up".
   - Missing '@Deprecated' annotation: Ignore -> **Warning**
