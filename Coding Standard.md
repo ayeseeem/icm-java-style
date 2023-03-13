@@ -70,13 +70,17 @@ Apply the following changes:
 - Unnecessary code:
 
   - Value of method parameter is not used: Ignore -> **Warning**
-    - (but Ignore in overriding and implementing methods)
+
+    - Ticked: Ignore in overriding and implementing methods
+
   - Unnecessary 'else' statement: Ignore -> **Warning**
   - Unnecessary cast or 'instanceof' operation: Ignore -> **Warning**
     - Partially moot given that "Remove unnecessary casts" is set in "Clean up".
   - Unnecessary declaration of thrown exception: Ignore -> **Error**
-    - (but Ignore in overriding and implementing, or documented with '@throws'
-      or '@exception'; **Don't** ignore Exception or Throwable)
+
+    - Ticked: Ignore in overriding and implementing methods
+    - Ticked: Ignore exceptions documented with '@throws' or '@exception'
+    - **Untick**ed: Ignore Exception or Throwable
 
 - Generic types:
 
