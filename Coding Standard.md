@@ -93,6 +93,22 @@ Apply the following changes:
   - Missing '@Deprecated' annotation: Ignore -> **Warning**
 
 
+#### Java; Compiler; Javadoc ####
+
+To avoid unpleasant surprises with Javadoc when doing `mvn release`,
+consider turning on warnings under "Process Javadoc comments"
+(and keep the defaults of the rest, for example `public` visibility only)
+as follows:
+
+- Malformed Javadoc comments: Ignore -> **Warning**
+  - (because `mvn javadoc:javadoc` treats them as warnings.)
+- Missing Javadoc tags: Ignore -> **Error**
+  - (because `mvn javadoc:javadoc` treats (some of) them as errors.)
+- Missing Javadoc comments: Ignore
+  - (Currently, `mvn` checks comments that are present, but not totally absent
+    ones.)
+
+
 #### Java; Code Style; Clean Up ####
 
 Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml),
