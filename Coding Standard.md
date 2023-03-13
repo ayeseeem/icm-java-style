@@ -97,43 +97,40 @@ Apply the following changes:
 
 Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml),
 which is the "Eclipse [built-in]" profile, with the following modifications
-(changes in bold):
+(changes in **bold**):
 
+- Code Organising:
 
-##### Code Organising #####
+  - **Remove trailing whitespace**
+  - **Organize imports**
 
-- **Remove trailing whitespace**
-- **Organize imports**
+- Code Style:
 
+  - **Use blocks in if/while/for/do statements**
+    - **Always**
+  - **Convert 'for' loops to enhanced**
+  - **Convert functional interface instances**
+    - Use lambda where possible
 
-##### Code Style #####
+- Unnecessary Code:
 
-- **Use blocks in if/while/for/do statements**
-  - **Always**
-- **Convert 'for' loops to enhanced**
-- **Convert functional interface instances**
-  - Use lambda where possible
-
-
-##### Unnecessary Code #####
-
-- Remove unused imports
-- Remove unnecessary casts
-- **Remove redundant type arguments**
-- **Remove redundant modifiers**
-- **Remove redundant semicolons**
+  - Remove unused imports
+  - Remove unnecessary casts
+  - **Remove redundant type arguments**
+  - **Remove redundant modifiers**
+  - **Remove redundant semicolons**
 
 
 #### Java; Code Style; Formatter ####
 
 Load [`Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml),
 which is the "Eclipse [built-in]" profile, with the following modifications
-(changes in bold):
+(changes in **bold**):
 
 
-##### Indentation #####
+- Indentation:
 
-- Tab policy: **Spaces only**
+  - Tab policy: **Spaces only**
 
 
 #### Java; Editor; Save Actions ####
