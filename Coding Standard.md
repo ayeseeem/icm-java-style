@@ -102,6 +102,9 @@ as follows:
 
 - Malformed Javadoc comments: Ignore -> **Warning**
   - (because `mvn javadoc:javadoc` treats them as warnings.)
+  - **Tick** Validate tag arguments
+  - Missing tag descriptions "Validate @return tags" ->
+    **"Validate all standard tags"**
 - Missing Javadoc tags: Ignore -> **Error**
   - (because `mvn javadoc:javadoc` treats (some of) them as errors.)
 - Missing Javadoc comments: Ignore
