@@ -133,11 +133,28 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 
 - Unnecessary Code:
 
-  - Remove unused imports
-  - Remove unnecessary casts
   - **Remove redundant type arguments**
   - **Remove redundant modifiers**
   - **Remove redundant semicolons**
+
+These changes should mean that the Details view looks like this:
+
+- Change non static accesses to static members using declaring type
+- Change indirect accesses to static members to direct accesses (accesses through subtypes)
+- Convert control statement bodies to block
+- Convert 'for' loops to enhanced 'for' loops
+- Use lambda where possible
+- Remove unused imports
+- Add missing '@Override' annotations
+- Add missing '@Override' annotations to implementations of interface methods
+- Add missing '@Deprecated' annotations
+- Remove unnecessary casts
+- Remove redundant modifiers
+- Remove redundant semicolons
+- Remove unnecessary '$NON-NLS$' tags
+- Organize imports
+- Remove trailing white spaces on all lines
+- Remove redundant type arguments
 
 
 #### Java; Code Style; Formatter ####
