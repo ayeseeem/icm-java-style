@@ -5,10 +5,8 @@ Allowed tags in source code (configure your IDE to detect them):
 
 - `TODO`: low-level tasks
   - for significant issues, put TODOs in READMEs or use an issue tracker
-  - (Eclipse: Priority: Normal)
 - `HACK`: "temporary" hacks to get code running
   - avoid leaving these in the code for long
-  - (Eclipse: Priority: High)
 
 Add initials and time, like this:
 
@@ -50,6 +48,12 @@ Recommended plug-ins:
 
 - [MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/)
 - [Infinitest](https://infinitest.github.io/#eclipse)
+
+
+#### Java; Compiler; Task Tags ####
+
+- Create a new tag: `HACK`, Priority: High.
+- `TODO` should already exist, Priority: Normal.
 
 
 #### Java; Compiler; Errors/Warnings ####
