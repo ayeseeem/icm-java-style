@@ -193,6 +193,11 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - If using Hamcrest, prefer Hamcrest's `assertThat()` to JUnit's `assertThat()`,
   which is being deprecated.
   - It can give slightly better diagnostic messages, and is more future-proof.
+  - In Eclipse, add `org.hamcrest.MatcherAssert` to the "Favorites"
+    (Preferences: Java; Editor; Content Assist; Favorites) so that it is
+    offered as a suggestion with code completion.
+    You will still have to take care to pick the Hamcrest version rather than
+    the JUnit version, if it is offered.
 
 
 ### SonarQube ###
