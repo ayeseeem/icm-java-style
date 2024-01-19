@@ -172,6 +172,14 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 
   - Tab policy: **Spaces only**
 
+- Comments:
+
+  - Javadocs:
+
+    - Align Javadoc tags in columns: **Align descriptions to tag width**
+    - **New line before @param/@throws descriptions**
+    - **Indent wrapped @param/@throws descriptions**
+
 
 #### Java; Editor; Save Actions ####
 
