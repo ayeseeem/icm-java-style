@@ -48,6 +48,7 @@ Recommended plug-ins:
 
 - [MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/)
 - [Infinitest](https://infinitest.github.io/#eclipse)
+- [EclEmma Java Code Coverage for Eclipse](https://www.eclemma.org/)
 
 
 #### Java; Compiler; Task Tags ####
