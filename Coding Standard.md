@@ -199,14 +199,19 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - Regex for Eclipse/Spring STS to convert (simple, single-comma) assertions:
   - Find: `assertEquals\((.*), (.*)\)`
   - Replace: `assertThat\($2, is\($1\)\)`
-- If using Hamcrest, prefer Hamcrest's `assertThat()` to JUnit's `assertThat()`,
-  which is being deprecated.
-  - It can give slightly better diagnostic messages, and is more future-proof.
-  - In Eclipse, add `org.hamcrest.MatcherAssert` to the "Favorites"
-    (Preferences: Java; Editor; Content Assist; Favorites) so that it is
-    offered as a suggestion with code completion.
-    You will still have to take care to pick the Hamcrest version rather than
-    the JUnit version, if it is offered.
+- If using Hamcrest:
+  - Prefer Hamcrest's `assertThat()` to JUnit's `assertThat()`,
+    which is being deprecated.
+    - It can give slightly better diagnostic messages, and is more future-proof.
+    - In Eclipse, add `org.hamcrest.MatcherAssert` to the "Favorites"
+      (Preferences: Java; Editor; Content Assist; Favorites) so that it is
+      offered as a suggestion with code completion.
+      You will still have to take care to pick the Hamcrest version rather than
+      the JUnit version, if it is offered.
+  - In Eclipse, add `org.hamcrest.Matchers` to the "Favorites"
+    (Preferences: Java; Editor; Content Assist; Favorites) so that an extended
+    range of options - like `empty()` - are offered as suggestions with code
+    completion.
 
 
 ### SonarQube ###
