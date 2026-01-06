@@ -182,7 +182,6 @@ Load [`Java--Code-Style--Formatter--STS-4--Eclipse-built-in--plus-mods.xml`](Jav
 which is the "Eclipse [built-in]" profile, with the following modifications
 (changes in **bold**):
 
-
 - Indentation:
 
   - Tab policy: **Spaces only**
