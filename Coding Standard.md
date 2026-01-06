@@ -201,7 +201,33 @@ which is the "Eclipse [built-in]" profile, with the following modifications
 - **Perform the selected actions on Save**
 - **Organize imports**
 - Additional Actions:
-  - Configure this to match the Clean Up (above) as far as possible
+
+Configure this to match the Clean Up (above) as far as possible, except:
+
+- Do **not** tick Remove unused imports, it can be annoying if these are
+  removed every time you save.
+  They default compiler settings will still flag unused imports.
+  However, it _is_ acceptable to have this enabled on the Clean Up settings,
+  as this is a more deliberate action.
+
+These changes should mean that the Details view looks something like this:
+
+- Convert control statement bodies to block
+- Convert to enhanced 'for' loops
+- Convert to enhanced 'for' loops
+- Primitive type rather then wrapper class
+- Add missing '@Override' annotations
+- Add missing '@Override' annotations to implementations of interface methods
+- Add missing '@Deprecated' annotations
+- Remove unnecessary casts
+- Remove redundant modifiers
+- Remove redundant semicolons
+- Remove trailing white spaces on all lines
+- Boolean value rather than comparison
+- Use lambda where possible and simplify expression
+- Simplify lambda expression and method reference syntax
+- Use try-with-resource
+- Use diamond operator
 
 
 ### JUnit ###
