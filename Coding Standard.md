@@ -119,36 +119,45 @@ as follows:
 
 #### Java; Code Style; Clean Up ####
 
-Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml),
-which is the "Eclipse [built-in]" profile, with the following modifications
-(changes in **bold**):
+Load [`Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml`](Java--Code-Style--Clean-Up--STS-4--Eclipse-built-in--plus-mods.xml).
+This is based on the "Eclipse [built-in]" profile.
+The changes from various historic versions are listed below;
+the changes to the latest defaults, as at Spring STS v4.21, are in **bold**:
 
 - Code Organising:
 
-  - **Remove trailing whitespace**
+  - Remove trailing whitespace
+    - All lines
   - **Organize imports**
 
 - Code Style:
 
-  - **Use blocks in if/while/for/do statements**
-    - **Always**
-  - **Convert 'for' loops to enhanced**
+  - Use blocks in if/while/for/do statements
+    - Always
+  - **Simplify lambda expression and method reference syntax**
+
+- Java Feature
+
   - **Convert functional interface instances**
     - Use lambda where possible
+  - **Use try-with-resources**
+  - Convert to enhanced 'for' loops
+    - **Untick** Only if loop variable used
 
 - Unnecessary Code:
 
-  - **Remove redundant type arguments**
+  - Remove redundant type arguments (N/A in recent versions?)
   - **Remove redundant modifiers**
-  - **Remove redundant semicolons**
+  - Remove redundant semicolons
 
 These changes should mean that the Details view looks like this:
 
 - Change non static accesses to static members using declaring type
 - Change indirect accesses to static members to direct accesses (accesses through subtypes)
 - Convert control statement bodies to block
-- Convert 'for' loops to enhanced 'for' loops
-- Use lambda where possible
+- Convert to enhanced 'for' loops
+- Convert to enhanced 'for' loops
+- Primitive type rather then wrapper class
 - Remove unused imports
 - Add missing '@Override' annotations
 - Add missing '@Override' annotations to implementations of interface methods
@@ -159,7 +168,12 @@ These changes should mean that the Details view looks like this:
 - Remove unnecessary '$NON-NLS$' tags
 - Organize imports
 - Remove trailing white spaces on all lines
-- Remove redundant type arguments
+- Boolean value rather than comparison
+- Single 'if' statement rather than duplicate blocks that fall through
+- Use lambda where possible and simplify expression
+- Simplify lambda expression and method reference syntax
+- Use try-with-resource
+- Use diamond operator
 
 
 #### Java; Code Style; Formatter ####
