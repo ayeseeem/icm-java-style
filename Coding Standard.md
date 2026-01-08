@@ -247,6 +247,28 @@ These changes should mean that the Details view looks something like this:
       offered as a suggestion with code completion.
       You will still have to take care to pick the Hamcrest version rather than
       the JUnit version, if it is offered.
+  - Comparing lists:
+    a simple `assertThat(actual, is(expected))` works,
+    but it's hard to see which element is wrong in long lists.
+    You get a better diagnostic, highlighting the wrong element, by using
+    `assertThat(actual, contains(expected.toArray()));`
+    You can see this in the following example (taken from
+    [`HamcrestIdiomsTest.java`](src/test/java/org/ayeseeem/test/hamcrest/HamcrestIdiomsTest.java), which also contains details of the error message):
+
+    ```java
+    @Test
+    public void listChecking_WithItemBasedDiagnostic() {
+        List<String> expected = Arrays.asList("a", "b", "c");
+        List<String> actual = Arrays.asList("a", "b", "ZZZ");
+
+        // Works, but hard to see which element is wrong in a long list
+        assertThat(actual, is(expected));
+
+        // Better diagnostic than simple list compare
+        assertThat(actual, contains(expected.toArray()));
+    }
+    ```
+
   - In Eclipse, add `org.hamcrest.Matchers` to the "Favorites"
     (Preferences: Java; Editor; Content Assist; Favorites) so that an extended
     range of options - like `empty()` - are offered as suggestions with code
