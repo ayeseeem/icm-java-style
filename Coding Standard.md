@@ -8,6 +8,9 @@ detailed below.
 - Configure your IDE appropriately
 
 
+TODO: ICM 2026-04-03: Line length (80; 100; 120), and configure IDE
+
+
 Allowed tags in source code (configure your IDE to detect them):
 
 - `TODO`: low-level tasks
