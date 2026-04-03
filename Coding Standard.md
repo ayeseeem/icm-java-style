@@ -1,6 +1,13 @@
 Coding Standard
 ===============
 
+Use spaces for indenting, not tabs! This is the general approach for all
+file types. Whether to use 2 spaces or 4 spaces is language dependent, as
+detailed below.
+
+- Configure your IDE appropriately
+
+
 Allowed tags in source code (configure your IDE to detect them):
 
 - `TODO`: low-level tasks
