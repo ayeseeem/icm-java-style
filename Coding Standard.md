@@ -319,3 +319,35 @@ XML
     <https://maven.apache.org/developers/conventions/code.html#XML_Code_Style>,
     although that convention does not seem to be very common, and the
     Spring tools seem to use tab indentation.
+
+
+HTML
+----
+
+- Use 2 spaces for indenting, not tabs
+- Don't indent the `<head>` and `<body>` sections, so code looks like this:
+
+  ```HTML
+  <html>
+  <head>
+    <title>Some Title</title>
+  </head>
+  <body>
+    <h1>Some Title</h1>
+  </body>
+  </html>
+  ```
+
+- Prefer lower case, so for example `<body>` rather than `<BODY>`, but
+  either way, definitely be consistent in choice.
+
+Configure your IDE to support these choices.
+
+
+### Spring STS/Eclipse ###
+
+- HTML (Wild Web Developer); Format:
+  - [ ] (unticked) Indent `<head>` and `<body>` sections.
+
+- General; Text Editors
+  - Insert spaces for tabs
